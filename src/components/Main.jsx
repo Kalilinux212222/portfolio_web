@@ -53,7 +53,7 @@ const Main = () => {
                 </ul>
                 {/* Toggle menu */}
                 
-                <div className='menuB sm:hidden flex mt-3 mr-5'>
+                <div className='menuB flex mt-3 mr-5'>
                     {closeMenu ? (
                         <TbMenu3 onClick={handleMenu} color='white' size={20} />
                     ) : (

@@ -185,3 +185,8 @@ body{
 .micButton:hover .micIcon {
   fill: #ff5100;
 }
+@media (width >= 481px) {
+  .menuB{
+    display: none;
+  }
+}
