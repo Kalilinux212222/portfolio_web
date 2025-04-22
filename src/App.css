@@ -5,7 +5,7 @@ body {
 }
 
 /* Hide nav for screens <= 481px */
-@media (max-width: 481px) {
+@media (max-width: 500px) {
   .nav {
     display: none; /* Hide the nav */
   }
