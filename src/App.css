@@ -1,9 +1,9 @@
 @import "tailwindcss";
 body{
   background-image: url(./assets/Bg.jpg);
-  overflow-x: auto;
+  
 }
-@media (width <= 1056px) {
+@media (width <= 481px) {
     
     .nav{
       display: none;
@@ -36,7 +36,32 @@ body{
     }
 }
 
-
+@media (width >= 481px) {
+  
+  .mb{
+    margin-top: 150px;
+    width: auto;
+    height: 600px;
+    text-align: center;
+  
+  }
+  
+  .navbar-container{
+    bottom: 0;
+    top: 560px;
+    left: 0;
+    right: 0;
+  }
+  footer{
+    bottom: 38px;
+  }
+  .mbpf{
+    display: none;
+  }
+  .menuB{
+    margin-left: 700px;
+  }
+}
 
 /* From Uiverse.io by elijahgummer */ 
 .mobile{
@@ -184,9 +209,4 @@ body{
 
 .micButton:hover .micIcon {
   fill: #ff5100;
-}
-@media (width >= 481px) {
-  .menuB{
-    display: none;
-  }
 }

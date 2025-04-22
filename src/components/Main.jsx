@@ -53,14 +53,14 @@ const Main = () => {
                 </ul>
                 {/* Toggle menu */}
                 
-                <div className='menuB flex mt-3 mr-5'>
+                <div className='menuB lg:hidden flex mt-3 mr-5'>
                     {closeMenu ? (
                         <TbMenu3 onClick={handleMenu} color='white' size={20} />
                     ) : (
                         <RiCloseFill onClick={handleMenu} size={20} color='white' />
                     )}
                 </div>
-                <div class="mbpf sm:hidden bg-white rounded-full border-2 shadow-2xl">
+                <div class="mbpf bg-white rounded-full border-2 shadow-2xl">
                     <img  class="w-full h-auto object-cover rounded-full " src={profile} height="60"  width="60"/>
                 </div>
             </nav>
