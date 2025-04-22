@@ -42,7 +42,7 @@ const Main = () => {
                     <h3 className=" font-extrabold mt-3 mx-5 text-2xl text-red-600 items-center logo" style={{ fontFamily: "'Orbitron', monospace" }}>Lynn'studio</h3>
                 </header>
                 
-                <ul className='nav sm:hidden flex justify-end text-red-600 mr-7 items-center'>
+                <ul className='nav  flex justify-end text-red-600 mr-7 items-center'>
                     <li><a className='mx-4 p-2 hover:underline ' href="#">Home</a></li>
                     <li><a className='mx-4 p-2 hover:underline ' href="#">About</a></li>
                     <li><a className='mx-4 p-2 hover:underline ' href="#">Contact</a></li>
@@ -53,7 +53,7 @@ const Main = () => {
                 </ul>
                 {/* Toggle menu */}
                 
-                <div className='menuB lg:hidden flex mt-3 mr-5'>
+                <div className='menuB lg:hidden flex mt-3 mr-[-100px]'>
                     {closeMenu ? (
                         <TbMenu3 onClick={handleMenu} color='white' size={20} />
                     ) : (

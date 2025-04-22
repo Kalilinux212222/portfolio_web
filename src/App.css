@@ -5,7 +5,7 @@ body {
 }
 
 /* Hide nav for screens <= 481px */
-@media (max-width: 600px) {
+@media (max-width: 481px) {
   .nav {
     display: none; /* Hide the nav */
   }
@@ -17,7 +17,7 @@ body {
   }
   .navbar-container {
     bottom: 0;
-    top: 560px;
+    top: 500px;
     left: 0;
     right: 0;
   }
@@ -26,7 +26,6 @@ body {
   }
   .mbpf {
     margin-top: 10px;
-    margin-right: 10px;
     width: 40px;
     height: 40px;
   }
@@ -35,11 +34,9 @@ body {
   }
 }
 
-/* Hide nav for screens <= 1060px */
-@media (max-width: 1060px) {
-  .nav {
-    display: none; /* Hide the nav */
-  }
+/* Hide nav for screens >= 1000px */
+@media (min-width: 1000px) {
+  
   .mb {
     margin-top: 150px;
     width: auto;
@@ -48,27 +45,29 @@ body {
   }
   .navbar-container {
     bottom: 0;
-    top: 800px;
+    top: 1100px;
     left: 0;
     right: 0;
   }
   footer {
     bottom: 38px;
   }
-  .mbpf {
-    display: none; /* Hide profile picture */
+  .mbpf{
+    display: none;
   }
-  .menuB {
-    margin-left: 10px; /* Adjusted for smaller screens */
-  }
+  
 }
 
-/* Styles for small devices */
+/* Styles for small devices (<= 768px) */
 @media (max-width: 768px) {
   .mb {
     height: auto; /* Allow height to adjust based on content */
   }
-  
+  .mbpf {
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+  }
 }
 
 /* Other styles remain unchanged */
@@ -220,9 +219,5 @@ body {
 .micButton:hover .micIcon {
   fill: #ff5100;
 }
-@media (max-width: 1024px) {
-  .menuB {
-    display: block; /* Ensure it is displayed */
-    margin-left: 10px; /* Adjust margin as needed */
-  }
-}
+
+
