@@ -53,7 +53,7 @@ const Main = () => {
                 </ul>
                 {/* Toggle menu */}
                 
-                <div className='menuB md:hidden flex mt-3 mr-5'>
+                <div className='menuB sm:hidden flex mt-3 mr-5'>
                     {closeMenu ? (
                         <TbMenu3 onClick={handleMenu} color='white' size={20} />
                     ) : (
@@ -77,7 +77,7 @@ const Main = () => {
                 </div>
             )}
             
-            <main  className='mb text-white mt-50 w-full h-[718px] ' style={{ fontFamily: "'Orbitron', monospace" }}>
+            <main  className='mb text-white mt-50 w-full h-auto ' style={{ fontFamily: "'Orbitron', monospace" }}>
                 <h2 className='lg:text-4xl mx-5 text-3xl text-red-600 font-bold'>Portfolio Website</h2>
                 <p className='lg:text-xl mt-4 mx-5 text-md' style={{ fontFamily: "'modern sans-serif', monospace" }}>I'm a UI/UX Desginer Lynn Lynn Aung</p>
                 <button className='lg:text-lg mx-5 mt-6 bg-white rounded-xl text-black p-2 text-xs' onClick={handleScrollToSecondpart}>LET'S EXPLORE</button>
