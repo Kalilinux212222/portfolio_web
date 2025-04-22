@@ -84,7 +84,7 @@ const Main = () => {
                 <button className='lg:text-lg mx-2 mt-6 bg-white rounded-xl text-black p-2 text-xs' >DOWNLOAD CV</button>
                 <div className=''>
                 {search && (
-                <div class="navbar-container  fixed  bottom-[30px] left-0 right-0 flex justify-center items-center" style={{ fontFamily: "'modern sans-serif', monospace" }}>
+                <div class="navbar-container  fixed   left-0 right-0 flex justify-center items-center" style={{ fontFamily: "'modern sans-serif', monospace" }}>
                 <div class="search-bar">
                     <div class="InputContainer">
                     <svg
