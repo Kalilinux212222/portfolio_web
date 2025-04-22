@@ -3,7 +3,7 @@ body{
   background-image: url(./assets/Bg.jpg);
   overflow-x: auto;
 }
-@media (max-width: 481px) {
+@media (width <= 1056px) {
     
     .nav{
       display: none;
