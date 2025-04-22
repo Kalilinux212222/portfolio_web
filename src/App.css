@@ -1,0 +1,186 @@
+@import "tailwindcss";
+body{
+  background-image: url(./assets/Bg.jpg);
+  overflow-x: auto;
+}
+@media (max-width: 481px) {
+    
+    .nav{
+      display: none;
+    }
+    .mb{
+      width: auto;
+      height: 600px;
+      text-align: center;
+    
+    }
+    
+    .navbar-container{
+      bottom: 0;
+      top: 560px;
+      left: 0;
+      right: 0;
+    }
+    footer{
+      bottom: 38px;
+    }
+    .mbpf{
+      margin-top: 10px;
+      margin-right: 10px;
+      width: 40px;
+      height: 40px;
+    }
+    .menuB{
+      margin-left: 130px;
+    }
+}
+
+
+
+/* From Uiverse.io by elijahgummer */ 
+.mobile{
+    flex-direction: column;
+}
+/* From Uiverse.io by eslam-hany */ 
+.button-container {
+  display: flex;
+  background-color: rgb(45, 48, 51);
+  width: 250px;
+  height: 40px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+    rgba(2, 48, 94, 0.5) 5px 10px 15px;
+  transition: all 0.5s;
+}
+.button-container:hover {
+  width: 300px;
+  transition: all 0.5s;
+}
+
+.button {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.icon {
+  font-size: 20px;
+}
+/* From Uiverse.io by DipeshPun91 */ 
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 300px; /* Reduced max-width for a smaller search bar */
+  background-color: #1a1b23;
+  padding: 0.25rem 0.5rem; /* Reduced padding for a more compact look */
+  border-radius: 20px; /* Slightly smaller border radius */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); /* Reduced shadow for a smaller effect */
+  transition: all 0.3s ease;
+  border: 1px solid #2a2b33;
+}
+
+.search-bar:focus-within {
+  background-color: #222533;
+  border-color: #00ff99;
+  box-shadow: 0 4px 10px rgba(0, 255, 153, 0.35); /* Adjusted shadow */
+}
+
+.search-bar:hover {
+  background-color: #222533;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35); /* Adjusted shadow */
+}
+
+.InputContainer {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 0.5rem; /* Reduced gap for a more compact layout */
+}
+
+.input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 0.875rem; /* Reduced font size for a smaller input */
+  background: none;
+  color: #f0f0f0;
+  padding: 0.25rem 0; /* Reduced padding for a more compact look */
+  font-family: inherit;
+}
+
+.input::placeholder {
+  color: #8a8a8a;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.input:focus::placeholder {
+  opacity: 0.5;
+}
+
+.searchIcon {
+  width: 16px; /* Reduced icon size */
+  height: 16px; /* Reduced icon size */
+  fill: #8a8a8a;
+  transition: fill 0.2s ease;
+}
+
+.search-bar:focus-within .searchIcon {
+  fill: #00ff99;
+}
+
+.border {
+  width: 1px;
+  height: 20px; /* Reduced height for a smaller border */
+  background-color: #3a3b43;
+  margin: 0 0.5rem; /* Reduced margin for a more compact layout */
+}
+
+.micButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px; /* Reduced button size */
+  height: 30px; /* Reduced button size */
+  border: none;
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.micButton:hover {
+  background-color: #2a2b33;
+}
+
+.micIcon {
+  width: 16px; /* Reduced icon size */
+  height: 16px; /* Reduced icon size */
+  fill: #8a8a8a;
+  transition: fill 0.2s ease;
+}
+
+.micButton:hover .micIcon {
+  fill: #ff5100;
+}
