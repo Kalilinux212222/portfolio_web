@@ -9,6 +9,7 @@ body{
       display: none;
     }
     .mb{
+      margin-top: 150px;
       width: auto;
       height: 600px;
       text-align: center;
