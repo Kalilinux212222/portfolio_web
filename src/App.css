@@ -1,73 +1,81 @@
 @import "tailwindcss";
-body{
+
+body {
   background-image: url(./assets/Bg.jpg);
-  
-}
-@media (width <= 481px) {
-    
-    .nav{
-      display: none;
-    }
-    .mb{
-      margin-top: 150px;
-      width: auto;
-      height: 600px;
-      text-align: center;
-    
-    }
-    
-    .navbar-container{
-      bottom: 0;
-      top: 560px;
-      left: 0;
-      right: 0;
-    }
-    footer{
-      bottom: 38px;
-    }
-    .mbpf{
-      margin-top: 10px;
-      margin-right: 10px;
-      width: 40px;
-      height: 40px;
-    }
-    .menuB{
-      margin-left: 130px;
-    }
 }
 
-@media (width >= 481px) {
-  
-  .mb{
+/* Hide nav for screens <= 481px */
+@media (max-width: 481px) {
+  .nav {
+    display: none; /* Hide the nav */
+  }
+  .mb {
     margin-top: 150px;
     width: auto;
     height: 600px;
     text-align: center;
-  
   }
-  
-  .navbar-container{
+  .navbar-container {
     bottom: 0;
     top: 560px;
     left: 0;
     right: 0;
   }
-  footer{
+  footer {
     bottom: 38px;
   }
-  .mbpf{
-    display: none;
+  .mbpf {
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
   }
-  .menuB{
-    margin-left: 700px;
+  .menuB {
+    margin-left: 10px; /* Adjusted for small screens */
   }
 }
 
-/* From Uiverse.io by elijahgummer */ 
-.mobile{
-    flex-direction: column;
+/* Hide nav for screens <= 1060px */
+@media (max-width: 1060px) {
+  .nav {
+    display: none; /* Hide the nav */
+  }
+  .mb {
+    margin-top: 150px;
+    width: auto;
+    height: 600px;
+    text-align: center;
+  }
+  .navbar-container {
+    bottom: 0;
+    top: 560px;
+    left: 0;
+    right: 0;
+  }
+  footer {
+    bottom: 38px;
+  }
+  .mbpf {
+    display: none; /* Hide profile picture */
+  }
+  .menuB {
+    margin-left: 10px; /* Adjusted for smaller screens */
+  }
 }
-/* From Uiverse.io by eslam-hany */ 
+
+/* Styles for small devices */
+@media (max-width: 768px) {
+  .mb {
+    height: auto; /* Allow height to adjust based on content */
+  }
+  
+}
+
+/* Other styles remain unchanged */
+.mobile {
+  flex-direction: column;
+}
+
 .button-container {
   display: flex;
   background-color: rgb(45, 48, 51);
@@ -80,6 +88,7 @@ body{
     rgba(2, 48, 94, 0.5) 5px 10px 15px;
   transition: all 0.5s;
 }
+
 .button-container:hover {
   width: 300px;
   transition: all 0.5s;
@@ -107,12 +116,13 @@ body{
 .icon {
   font-size: 20px;
 }
-/* From Uiverse.io by DipeshPun91 */ 
+
 .navbar-container {
   display: flex;
   justify-content: center;
   padding: 1rem;
 }
+
 .search-bar {
   display: flex;
   align-items: center;
@@ -209,4 +219,10 @@ body{
 
 .micButton:hover .micIcon {
   fill: #ff5100;
+}
+@media (max-width: 1024px) {
+  .menuB {
+    display: block; /* Ensure it is displayed */
+    margin-left: 10px; /* Adjust margin as needed */
+  }
 }

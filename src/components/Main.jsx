@@ -42,7 +42,7 @@ const Main = () => {
                     <h3 className=" font-extrabold mt-3 mx-5 text-2xl text-red-600 items-center logo" style={{ fontFamily: "'Orbitron', monospace" }}>Lynn'studio</h3>
                 </header>
                 
-                <ul className='nav flex justify-end text-red-600 mr-7 items-center'>
+                <ul className='nav sm:hidden flex justify-end text-red-600 mr-7 items-center'>
                     <li><a className='mx-4 p-2 hover:underline ' href="#">Home</a></li>
                     <li><a className='mx-4 p-2 hover:underline ' href="#">About</a></li>
                     <li><a className='mx-4 p-2 hover:underline ' href="#">Contact</a></li>
@@ -66,7 +66,7 @@ const Main = () => {
             </nav>
                 {/* Responive for small dev */}
             {isOpen && (
-                <div className='md:hidden  text-white p-4 transition-transform ease-in-out duration-700 h-auto z-1'>
+                <div className=' text-white p-4 transition-transform ease-in-out duration-700 h-auto z-1'>
                     <ul className='flex justify-end flex-col text-red-600'>
                         <li className='py-3 border-b-1 hover:undeline'><a className='block' href="">Home</a></li>
                         <li className='py-3 border-b-1 hover:undeline'><a className='block' href="">About</a></li>
